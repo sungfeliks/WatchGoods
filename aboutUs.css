@@ -1,0 +1,285 @@
+/* header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3333;
+    padding: 10px;
+}
+
+header{
+    height: 10vh;
+}
+
+
+
+.logo{
+    font-weight: bold;
+    color: #FFFFFF;
+    gap: 10px;
+}
+
+.nav{
+    display: flex;
+    gap: 10px;
+}
+
+.nav a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#FFFFFF;
+
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+
+  nav{
+    background: #2C3333;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    /* padding: 0 100px; */
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #2C3333;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Jacques Francois', serif;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUs-image{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUs-image img{
+    width:500px;
+}
+
+/* .aboutUs{
+    border: 2px solid black;
+    text-align: center;
+
+    /* display: flex;
+    justify-content: center;
+
+} */
+
+.text{
+    text-align: center;
+    font-size: 24px;
+}
+
+footer{
+    background-color: #2C3333;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 20px;
+}
+
+
+
+.footPart{
+    margin-bottom: 20px;
+    
+}
+
+.footPart h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footPart ul{
+    list-style: none;
+    margin: 0;
+}
+
+.footPart li{
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/* .followUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.followUS img{
+    width: 30px;
+    margin: 0 5px;
+}
+
+.followUS ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+}
+
+.followUS li{
+    width: 30px;
+    margin: 0 5px;
+} */
+
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logo-container img{
+    width: 30px;
+}
+
+.copyright h5{
+    justify-content: center;
+}
+
+/* @media screen and (max-width: 800px){
+    .promotion img{
+        width: 90vw;
+        height: 50%;    }
+} */
+
+
+/* @media screen and (max-width: 652px){
+    .promotion img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .promotion img{
+        width: 300px;
+    }
+} */
+@media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 20px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  @media screen and (max-width: 274px){
+    label.logo{
+        font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 274px){
+    label.logo{
+        font-size: 19px;
+    }
+  }
+
+@media screen and (max-width: 533px){
+    .aboutUs-image img{
+        width: 400px
+    }
+}
+    
+
+@media screen and (max-width: 432px){
+    .aboutUs-image img{
+        width: 300px
+    }
+}

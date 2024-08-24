@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatcHGoods</title>
+    <link rel="stylesheet" href="contactUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="contactUs.js" defer></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">WatcHGoods</label>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a class="active" href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <section></section>
+      <br><br>
+      
+    <div class="title">
+        <h3>Contact Us</h3>
+    </div>
+
+    <form id="contact-form">
+        <label for="fullname">Full Name<br></label>
+        <input type="text" id="fullname" required>
+        <br><br>
+
+        <label for="email">Email<br></label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label for="countryregion">Country<br></label>
+        <select name="countryregion" id="countryregion">
+            <option value="blank">Choose Your Country</option>
+            <option value="">France</option>
+            <option value="">Indonesia</option>
+            <option value="">Japan</option>
+            <option value="">Singapore</option>
+            <option value="">Switzerland</option>
+        </select>
+        <br><br>
+
+        <label for="message">Message<br></label>
+        <textarea id="message" rows="6" required></textarea>
+        <br><br>
+
+        <div class="agree">
+            <input type="checkbox" id="agreement" required>
+            <label for="agreement">I agree to having this website send me a copy of the message</label>
+        </div>
+        <br><br>
+
+        <button type="button" id="button" onclick="validate()">Submit</button>
+    </form>
+    <br><br>
+
+    <footer>
+        <div class="footerRow">
+            <div class="footPart">
+                <h3>Information</h3>
+                <!-- <ul>
+                    <li>How to Shop</li>
+                    <li>Payment Method</li>
+                    <li>Refund Method</li>
+                </ul> -->
+
+                <h5>How to Shop</h5>
+                <h5>Payment Method</h5>
+                <h5>Refund Method</h5>
+            </div>
+    
+            <div class="footPart">
+                <h3>Our Terms</h3>
+                <!-- <ul>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Refund Policy</li>
+                </ul> -->
+
+                <h5>Terms & Conditions</h5>
+                <h5>Privacy Policy</h5>
+                <h5>Refund Policy</h5>
+            </div>
+    
+            <div class="footPart">
+                <h3>Customer Service</h3>
+                <!-- <ul>
+                    <li>support@WatcHGoods.com</li>
+                </ul> -->
+
+                <h5>support@WatchGoods.com</h5>
+            </div>
+        </div>
+        
+        <div class="followUs-row">
+            <h3>Follow Us</h3>
+            <div class="logo-container">
+                <div class="facebook">
+                    <img src="./Images/facebook.png">
+                </div>
+    
+                <div class="instagram">
+                    <img src="./Images/instagram.png">
+                </div>
+    
+                <div class="twitter">
+                    <img src="./Images/twitter.png">
+                </div>
+                
+                <div class="youtube">
+                    <img src="./Images/youtube.png">
+                </div>
+            </div>
+
+        </div>
+            
+            <br>
+
+        <div class="copyright">
+            <h5>Copyright &copy; 2023 WatcHGoods | All Rights Reserved</h5>
+        </div>
+    </footer>
+
+</body>
+</html>
